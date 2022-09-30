@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <style>
+
+        .container__container__container__container{
+            border: 1px solid chocolate ;
+
+             margin-left: 50px;
+        }
+        
+
+        .container__container__container{
+            border: 1px solid chocolate ;
+
+            margin-left: 50px;
+        }
+
+        .container__container{
+            border: 1px solid chocolate ;
+
+            margin-left: 50px;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+           
+            margin-left: 10%;
+
+            background-color:aquamarine;
+
+            
+        }
+
+       
+
+        .container{
+            border: 1px solid chocolate ;
+
+        }
+
+       
+
+        p{
+            display: flex;
+           align-items: center;
+           justify-content: space-between;
+
+            width: 70px;
+
+            
+        }
+
+        div{
+            width: 200px;
+        }
+
+        h2{
+            margin-left: 35px;
+        }
+
+          
+        img{
+            width: 150px;
+            height: 150px;
+
+            margin-left: 10px;
+        }
+
+    </style>
+
+
+    <script>
+        $(function(){
+            $("#slider").slider({
+                animate: "slow",
+                range: "true",
+                max: 10,
+                values: ["0"],
+                slide: function(event, ui){
+                    $("#result").text(ui.values[0]);
+                }
+            })
+
+           
+            $("#slider2").slider({
+                animate: "slow",
+                range: "true",
+                max: 15,
+                values: ["0"],
+                slide: function(event, ui){
+                    $("#result2").text(ui.values[0]);
+                }
+            })
+
+            
+            $("#slider3").slider({
+                animate: "slow",
+                range: "true",
+                max: 20,
+                values: ["0"],
+                slide: function(event, ui){
+                    $("#result3").text(ui.values[0]);
+                }
+            })
+
+            
+            $("#slider4").slider({
+                animate: "slow",
+                range: "true",
+                max: 25,
+                values: ["0"],
+                slide: function(event, ui){
+                    $("#result4").text(ui.values[0]);
+                }
+            })
+
+        })
+
+
+    
+
+    </script>
+</head>
+<body>
+    <div  class="container">
+    <h2>Avengers</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/ru/3/3c/The_Avengers_2012_logo.jpg" alt="">
+<p>
+    американский супергеройский фильм 2012 года, основанный на одноимённой команде из комиксов издательства Marvel Comics. Шестая лента в медиафраншизе «Кинематографическая вселенная Marvel»
+</p>
+    <div id="slider"></div>
+    <b style="color: green ;">Рейтинг: <span id="result" style="color:green ;"  ></span> 
+    </b>
+</div>
+
+    <div class="container__container">
+        <h2> The Fast and the Furious</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9e/Fast_%26_Furious_9_%28poster%29.jpg/240px-Fast_%26_Furious_9_%28poster%29.jpg" alt="">
+    <p>
+        американская медиафраншиза, состоящая на 2021 год из десяти полнометражных и двух короткометражных фильмов.
+    </p>
+        <div id="slider2"></div>
+        <b style="color: red ;">Рейтинг: <span id="result2" style="color:red ;"  ></span> 
+        </b>
+    </div>
+
+    <div class="container__container__container">
+        <h2>Spider-Man 3</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Spider-Man_3%2C_International_Poster.jpg" alt="">
+    <p>
+        американский супергеройский фильм 2007 года, основанный наперсонаже комиксов Marvel , Человеке-пауке
+    </p>
+        <div id="slider3"></div>
+        <b style="color: purple ;">Рейтинг: <span id="result3" style="color:purple ;"  ></span> 
+        </b>
+    </div>
+
+    <div class="container__container__container__container">
+        <h2>Doctor Sleep</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/ru/e/e7/Doctor_Sleep_%28poster%29.jpg" alt="">
+    <p>
+        американский фильм ужасов, основанный на одноимённом романе Стивена Кинга.
+    </p>
+        <div id="slider4"></div>
+        <b style="color: orange ;">Рейтинг: <span id="result4" style="color:orange ;"  ></span> 
+        </b>
+    </div>
+
+    
+
+        
+            
+      
+
+</body>
+</html>
